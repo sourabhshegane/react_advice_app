@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 function App() {
+  
+  useEffect(() => {
+    getAdvice()
+  }, []);
 
   const [advice, setAdvice] = useState('')
   
