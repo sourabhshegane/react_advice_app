@@ -30,7 +30,7 @@ function App() {
             Get advice
           </button> 
           </div>
-          <h2 className="made_by">Made with ❤️ by Sourabh</h2>
+          <h2 className="made_by">Made with ❤️ by Sourabh Shegane</h2>
         </div>
     </div>
   );
