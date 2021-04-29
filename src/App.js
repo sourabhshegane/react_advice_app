@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
 import React, {useState, useEffect} from 'react'
@@ -12,6 +11,7 @@ function App() {
   const [advice, setAdvice] = useState('')
   
   const getAdvice = () => {
+    setAdvice('Hang on, getting you an awesome advice...');
     axios.get('https://api.adviceslip.com/advice')
     .then(res => {
       setAdvice(res.data.slip.advice)
